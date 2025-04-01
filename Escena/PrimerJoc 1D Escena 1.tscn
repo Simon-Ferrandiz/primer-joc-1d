@@ -18,11 +18,14 @@ position = Vector2(575, 337)
 [node name="Area2D" parent="." instance=ExtResource("3_prj3v")]
 position = Vector2(789, 310)
 color_entrada = Color(0, 1, 1, 1)
+color_sortida = Color(0, 1, 1, 1)
 
 [node name="Area2D2" parent="." instance=ExtResource("3_prj3v")]
 position = Vector2(1024, 297)
 color_entrada = Color(1, 0, 1, 1)
+color_sortida = Color(1, 0, 1, 1)
 
 [node name="Area2D3" parent="." instance=ExtResource("3_prj3v")]
 position = Vector2(902, 479)
 color_entrada = Color(1, 1, 0, 1)
+color_sortida = Color(1, 1, 0, 1)
