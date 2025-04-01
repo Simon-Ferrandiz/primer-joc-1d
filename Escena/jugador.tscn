@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ci85nldccumug"]
+
+[ext_resource type="Script" uid="uid://cfajyt6gciyo8" path="res://Scripts/Jugador.gd" id="1_sj8w6"]
+[ext_resource type="Texture2D" uid="uid://cknlfbakph6fj" path="res://Imatges/Eye Of Rah.webp" id="2_15lna"]
+[ext_resource type="Texture2D" uid="uid://qmlenj5oq0ff" path="res://Imatges/Wheel.png" id="3_0fa0y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w2dns"]
+size = Vector2(143.5, 149)
+
+[node name="Jugador" type="CharacterBody2D"]
+script = ExtResource("1_sj8w6")
+
+[node name="Pare" type="Sprite2D" parent="."]
+scale = Vector2(0.59064, 0.431732)
+texture = ExtResource("2_15lna")
+
+[node name="Fill" type="Sprite2D" parent="Pare"]
+position = Vector2(-117.196, 174.5)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_0fa0y")
+
+[node name="Fill2" type="Sprite2D" parent="Pare"]
+position = Vector2(111.743, 171.402)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_0fa0y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_w2dns")
